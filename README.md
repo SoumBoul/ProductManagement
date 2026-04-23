@@ -1,20 +1,20 @@
 ﻿# Product Management
 
-Application desktop de gestion commerciale developpee en C# Windows Forms. Le projet permet de gerer les produits, categories, clients, utilisateurs et ventes avec une architecture simple en couches.
+Desktop sales management application built with C# Windows Forms. The project helps manage products, categories, customers, users, and sales using a simple layered architecture.
 
-## Fonctionnalites
+## Features
 
-- Gestion des produits
-- Gestion des categories
-- Gestion des clients
-- Gestion des utilisateurs
-- Gestion des commandes et details de commandes
-- Authentification des utilisateurs
-- Sauvegarde et restauration de la base de donnees
-- Impression et affichage de documents
-- Interface Windows Forms
+- Product management
+- Category management
+- Customer management
+- User management
+- Orders and order details management
+- User authentication
+- Database backup and restore
+- Document display and printing
+- Windows Forms user interface
 
-## Technologies utilisees
+## Technologies
 
 - C#
 - .NET Framework 4.7.2
@@ -24,60 +24,60 @@ Application desktop de gestion commerciale developpee en C# Windows Forms. Le pr
 - Crystal Reports
 - Visual Studio
 
-## Structure du projet
+## Project Structure
 
 ```text
 Projet Product Management/
-├── BL/                    # Business Layer: logique metier
-├── DAL/                   # Data Access Layer: acces a la base de donnees
-├── PresentationLayer/     # Interfaces Windows Forms
-├── Properties/            # Parametres et ressources du projet
-├── Resources/             # Images et ressources graphiques
+├── BL/                    # Business Layer: business logic
+├── DAL/                   # Data Access Layer: database access
+├── PresentationLayer/     # Windows Forms screens
+├── Properties/            # Project settings and resources
+├── Resources/             # Images and graphic resources
 ├── App.config
 ├── Program.cs
 ├── Project_Sales_Management.csproj
 └── Project_Sales_Management.sln
 ```
 
-## Prerequis
+## Requirements
 
-Avant de lancer le projet, installez :
+Before running the project, install:
 
-- Visual Studio avec le support .NET Framework
+- Visual Studio with .NET Framework support
 - .NET Framework 4.7.2
 - SQL Server
-- Crystal Reports Runtime si necessaire
+- Crystal Reports Runtime if required
 
-## Configuration de la base de donnees
+## Database Configuration
 
-Le projet utilise une base de donnees SQL Server nommee `Product_DB`.
+The project uses a SQL Server database named `Product_DB`.
 
-La connexion se trouve dans :
+The database connection is configured in:
 
 ```text
 DAL/DataAccessLayer.cs
 ```
 
-Si votre configuration SQL Server est differente, modifiez la chaine de connexion dans ce fichier pour l'adapter a votre environnement local.
+If your SQL Server configuration is different, update the connection string in this file to match your local environment.
 
-## Lancer le projet
+## Getting Started
 
-1. Cloner le depot :
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/SoumBoul/ProductManagement.git
 ```
 
-2. Ouvrir la solution dans Visual Studio :
+2. Open the solution in Visual Studio:
 
 ```text
 Project_Sales_Management.sln
 ```
 
-3. Verifier la connexion SQL Server.
+3. Check the SQL Server connection.
 
-4. Compiler et lancer l'application depuis Visual Studio.
+4. Build and run the application from Visual Studio.
 
-## Auteur
+## Author
 
-Projet developpe par SoumBoul.
+Developed by SoumBoul.
